@@ -1,0 +1,34 @@
+<!-- CODE HTML VALIDE SANS ERREURS -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- LEAFLET LIB -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <!-- LEAFLET LIB -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSSAT Weather cast</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="main">
+        <!-- Conteneur de la carte météo -->
+        <div class="map-weather">
+            <div id="map"></div>
+        </div>
+        <!-- Conteneur de du graphe -->
+        <div class="details">
+            <canvas id="userChart"></canvas>
+        </div>
+    </div>
+    <!-- Library pour la création de graphes -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Partie gestion du graphe de temperature -->
+    <script src="mapChartInits.js"></script>
+    <script src="utils.js"></script>
+    <script src="userGenerator.js"></script>
+</body>
+</html>
